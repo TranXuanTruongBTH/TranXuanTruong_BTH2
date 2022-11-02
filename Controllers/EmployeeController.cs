@@ -7,13 +7,14 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using TranXuanTruongBTH2.Data;
 using TranXuanTruongBTH2.Models;
+using TranXuanTruongBTH2.Models.Process;
 
-namespace NguyenNamSonBTH515.Controllers
+namespace TranXuanTruongBTH2.Controllers
 {
     public class EmployeeController : Controller
     {
         private readonly ApplicationDbcontext _context;
-
+        private ExcelProcess _excelProcess = new ExcelProcess();
         public EmployeeController(ApplicationDbcontext context)
         {
             _context = context;
