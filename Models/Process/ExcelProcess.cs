@@ -4,21 +4,23 @@ namespace TranXuanTruongBTH2.Models.Process
 {
     public class ExcelProcess
     {
+        private int occurrences;
+
         public DataTable ExcelToDataTable(string strPath)
         {
             FileInfo fi = new FileInfo(strPath);
             ExcelPackage excelPackage = new ExcelPackage(fi);
             DataTable dt = new DataTable();
-            ExcelWorksheet worksheet = excelPackage.Workbook.worksheets[0];
+            ExcelWorksheet worksheet = excelPackage.Workbook.Worksheets[0];
         if (worksheet.Dimension== null)
         {
             return dt;
         }
         List<string> columnNames = new List<string>();
         int currentColumn = 1;
-        foreach (var cell in worksheet.Cells[1,1,1,worksheet.Dimension.End.Column]);
+        foreach (var cell in worksheet.Cells[1,1,1,worksheet.Dimension.End.Column])
         {
-            string columnName = CancellationToken.Text.Trim();
+            string columnName = cell.Text.Trim();
             if (cell.Start.Column != currentColumn)
             {
                 columnNames.Add("Header_" + currentColumn);
@@ -27,7 +29,7 @@ namespace TranXuanTruongBTH2.Models.Process
             }
             columnNames.Add(columnName);
             int occurences = columnNames.Count(x => x.Equals(columnName));
-            if (occurrences >  1)
+            if(occurrences > 1)
             {
                 columnName = columnName + "_" + occurrences;
             }
@@ -40,7 +42,7 @@ namespace TranXuanTruongBTH2.Models.Process
             DataRow newRow = dt.NewRow();
             foreach (var cell in row)
             {
-                newRow[cell.start.Column - 1] = cell.Text;
+                newRow[cell.Start.Column - 1] = cell.Text;
             }
             dt.Rows.Add(newRow);
         }

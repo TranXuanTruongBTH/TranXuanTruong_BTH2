@@ -283,3 +283,9 @@ C:\Users\LAPTOP THANH DU\TranXuanTruongBTH2\obj\Debug\net6.0\refint\TranXuanTruo
 C:\Users\LAPTOP THANH DU\TranXuanTruongBTH2\obj\Debug\net6.0\TranXuanTruongBTH2.pdb
 C:\Users\LAPTOP THANH DU\TranXuanTruongBTH2\obj\Debug\net6.0\TranXuanTruongBTH2.genruntimeconfig.cache
 C:\Users\LAPTOP THANH DU\TranXuanTruongBTH2\obj\Debug\net6.0\ref\TranXuanTruongBTH2.dll
+C:\Users\LAPTOP THANH DU\TranXuanTruongBTH2\bin\Debug\net6.0\EPPlus.dll
+C:\Users\LAPTOP THANH DU\TranXuanTruongBTH2\bin\Debug\net6.0\EPPlus.Interfaces.dll
+C:\Users\LAPTOP THANH DU\TranXuanTruongBTH2\bin\Debug\net6.0\EPPlus.System.Drawing.dll
+C:\Users\LAPTOP THANH DU\TranXuanTruongBTH2\bin\Debug\net6.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\LAPTOP THANH DU\TranXuanTruongBTH2\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\LAPTOP THANH DU\TranXuanTruongBTH2\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
