@@ -12,6 +12,7 @@ namespace TranXuanTruongBTH2.Data
         public ApplicationDbcontext (DbContextOptions<ApplicationDbcontext> options):base(options)
         {
         }
+        public DbSet<TranXuanTruongBTH2.Models.Faculty> Faculty {get; set;} =default!;
         public DbSet<TranXuanTruongBTH2.Models.Student> Student {get; set;} = default!;
         public DbSet<TranXuanTruongBTH2.Models.Customer>? Customer { get; set; }
         public DbSet<TranXuanTruongBTH2.Models.Person>? Person { get; set; }

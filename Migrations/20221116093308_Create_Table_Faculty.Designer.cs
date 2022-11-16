@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TranXuanTruongBTH2.Data;
 
@@ -10,9 +11,10 @@ using TranXuanTruongBTH2.Data;
 namespace TranXuanTruongBTH2.Migrations
 {
     [DbContext(typeof(ApplicationDbcontext))]
-    partial class ApplicationDbcontextModelSnapshot : ModelSnapshot
+    [Migration("20221116093308_Create_Table_Faculty")]
+    partial class Create_Table_Faculty
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "6.0.10");
@@ -74,12 +76,6 @@ namespace TranXuanTruongBTH2.Migrations
             modelBuilder.Entity("TranXuanTruongBTH2.Models.Student", b =>
                 {
                     b.Property<string>("ID")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Faculty")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("FacultyID")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("StudentID")
